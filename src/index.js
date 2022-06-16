@@ -4,10 +4,14 @@ import { useState } from "react";
 const rootElement = document.getElementById("root");
 
 const App = (props) => {
-  const contador = useState(0);
+  const contador = useState(13);
 
   const contadorValue = contador[0];
   const updateContador = contador[1];
+
+  setInterval(() => {
+    updateContador(contadorValue + 1);
+  }, 2000);
 
   return (
     <div>
