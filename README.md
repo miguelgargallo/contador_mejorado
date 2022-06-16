@@ -1,2 +1,2 @@
-# contador_mejorado
+# ejercicio_clase_contador_mejorado_bootcamp
 Created with CodeSandbox
