@@ -13,10 +13,6 @@ const App = (props) => {
   const updateContador = contador[1];
 */
 
-  /*  setInterval(() => {
-    updateContador(contadorValue + 1);
-  }, 2000);
-  */
   console.log("render");
 
   return (
