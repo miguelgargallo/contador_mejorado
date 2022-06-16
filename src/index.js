@@ -5,7 +5,7 @@ const rootElement = document.getElementById("root");
 
 const App = (props) => {
   /* line 8 == lines 11-13 */
-  const [contadorValue, setContador] = useState(13);
+  const [contador, setContador] = useState(13);
 
   /*
   const contador = useState(13);
@@ -18,10 +18,10 @@ const App = (props) => {
   return (
     <div>
       <p>El valor del contador es</p>
-      <h1>{contadorValue}</h1>
+      <h1>{contador}</h1>
       <button
         onClick={() => {
-          console.log("click");
+          setContador(contador + 1);
         }}
       >
         Incrementar
