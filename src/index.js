@@ -19,11 +19,16 @@ const App = (props) => {
     setContador(contador + 1);
   };
 
+  const handleCliclk2 = () => {
+    setContador(contador - 1);
+  };
+
   return (
     <div>
       <p>El valor del contador es</p>
       <h1>{contador}</h1>
       <button onClick={handleCliclk}>Incrementar</button>
+      <button onClick={handleCliclk2}>Decrementar</button>
     </div>
   );
 };
