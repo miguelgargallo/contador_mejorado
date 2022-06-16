@@ -13,15 +13,17 @@ const App = (props) => {
   const updateContador = contador[1];
 */
 
-  setInterval(() => {
+  /*  setInterval(() => {
     updateContador(contadorValue + 1);
   }, 2000);
+  */
+  console.log("render");
 
   return (
     <div>
       <p>El valor del contador es</p>
       <h1>{contadorValue}</h1>
-      <h2>Magia de Miguel</h2>
+      <button>Incrementar</button>
     </div>
   );
 };
