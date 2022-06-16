@@ -21,7 +21,10 @@ const App = (props) => {
       <h1>{contador}</h1>
       <button
         onClick={() => {
-          setContador(contador + 1);
+          //    setContador(contador + 1);
+          setContador((prevContador) => {
+            return prevContador + 1;
+          });
         }}
       >
         Incrementar
