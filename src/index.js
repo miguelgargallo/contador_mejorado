@@ -15,20 +15,15 @@ const App = (props) => {
 
   console.log("render");
 
+  const handleCliclk = () => {
+    setContador(contador + 1);
+  };
+
   return (
     <div>
       <p>El valor del contador es</p>
       <h1>{contador}</h1>
-      <button
-        onClick={() => {
-          //    setContador(contador + 1);
-          setContador((prevContador) => {
-            return prevContador + 1;
-          });
-        }}
-      >
-        Incrementar
-      </button>
+      <button onClick={handleCliclk}>Incrementar</button>
     </div>
   );
 };
