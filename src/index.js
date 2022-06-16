@@ -21,7 +21,7 @@ const App = (props) => {
     <div>
       <p>El valor del contador es</p>
       <h1>{contadorValue}</h1>
-      <h2>Magia de React</h2>
+      <h2>Magia de Miguel</h2>
     </div>
   );
 };
