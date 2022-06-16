@@ -32,13 +32,7 @@ const App = (props) => {
   };
 
   const isEven = contador % 2 === 0;
-
-  let mensajePar = "";
-  if (isEven) {
-    mensajePar = "Es par";
-  } else {
-    mensajePar = "Es impar";
-  }
+  const mensajePar = isEven ? "Es par" : "Es impar";
 
   return (
     <div>
